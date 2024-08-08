@@ -7,7 +7,7 @@
  - ### [Chart](#Chart)
  - ### [Credit](#Credit)
  - ### [Deposit](#Deposit)
- - ### [See JavaDoc](docs/index.html)
+ - ### [See JavaDoc](https://belkamydog.github.io/MultiCalculator/)
  - ### [Example](#Example)
 
 ## How to start
@@ -30,20 +30,20 @@
         </dependency>
     </dependencies> ```
 ## Engineer Calculator
-   - Includes four classes, you can work with them both separately and through the main class [_**EngineerCalculator**_](docs/Engineer/EngineerCalculator.html).
-   - You can use a separate class [**_Polskaya_**](docs/Engineer/Polskaya/Polskaya.html) to translate an expression into reverse Polish notation.
-   - Or use the [_**PolskayaCalculator**_](docs/Engineer/PolskayaCalculator/PolskayaCalculator.html) class to evaluate the reverse polish notation expression.
-   - There is also a class [_**ValidationAndPreparing**_](docs/Engineer/ValidationAndPreparing/ValidationAndPreparing.html) that validates an infix notation expression.
-   - [_**EngineerCalculator**_](docs/Engineer/EngineerCalculator.html) the class includes all other classes in the package and performs a full evaluation of the expression if it has passed [_**ValidationAndPreparing**_](docs/Engineer/ValidationAndPreparing/ValidationAndPreparing.html).
+   - Includes four classes, you can work with them both separately and through the main class [_**EngineerCalculator**_](https://belkamydog.github.io/MultiCalculator/Engineer/EngineerCalculator).
+   - You can use a separate class [**_Polskaya_**](https://belkamydog.github.io/MultiCalculator/Engineer/Polskaya/Polskaya.html) to translate an expression into reverse Polish notation.
+   - Or use the [_**PolskayaCalculator**_](https://belkamydog.github.io/MultiCalculator/Engineer/PolskayaCalculator/PolskayaCalculator.html) class to evaluate the reverse polish notation expression.
+   - There is also a class [_**ValidationAndPreparing**_](https://belkamydog.github.io/MultiCalculator/Engineer/ValidationAndPreparing/ValidationAndPreparing.html) that validates an infix notation expression.
+   - [_**EngineerCalculator**_](https://belkamydog.github.io/MultiCalculator/Engineer/EngineerCalculator.html) the class includes all other classes in the package and performs a full evaluation of the expression if it has passed [_**ValidationAndPreparing**_](https://belkamydog.github.io/MultiCalculator/Engineer/ValidationAndPreparing/ValidationAndPreparing.html).
 ## Chart
    - Takes an infix expression and the domain of the function definition and calculate an array of coordinates to plot the graph. In the function, use the variable x.
-   - [see javadoc](docs/Chart/Chart.html)
+   - [see javadoc](https://belkamydog.github.io/MultiCalculator/Chart/Chart.html)
 ## Credit
    - It is used to calculate a loan with different types of payments, including a detailed monthly report.
-   - [see javadoc](docs/Credit/Credit.html)
+   - [see javadoc](https://belkamydog.github.io/MultiCalculator/Credit/Credit.html)
 ## Deposit
    - It is used to calculate income on deposits with and without different types of capitalization, and includes a detailed report.
-   - [see javadoc](docs/Deposit/DepositCalculator.html)
+   - [see javadoc](https://belkamydog.github.io/MultiCalculator/Deposit/DepositCalculator.html)
 ## Example
    #### Engineer example
    ```
