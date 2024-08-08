@@ -1,5 +1,5 @@
 <archetype>
-  <id>Calculator.Calculator</id>
+  <id>Engineer.PolskayaCalculator.PolskayaCalculator</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>

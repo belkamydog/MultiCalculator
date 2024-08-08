@@ -5,6 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
+/**
+ * Тесты для расчета кредита
+ * Эталонные значения расчитаны на депозитном калькуляторе с сайта "<a href="https://calcus.ru">calcus.ru</a>"
+ * @author Efimov Artyom / perryell
+ * @version 1.0
+ * */
+
 public class CreditTest {
 
     @Test
@@ -28,7 +35,6 @@ public class CreditTest {
         Credit credit = new Credit(Credit.creditPaymentType.differently, 10000.0, 21.0, 1,
                 Credit.creditTermType.year, LocalDate.of(2024, 8, 7));
         credit.calculate();
-        System.err.println(credit.toString());
         Assertions.assertEquals(848.19, credit.getMinMonthPayment());
         Assertions.assertEquals(1011.20, credit.getMaxMonthPayment());
         Assertions.assertEquals(1136.22, credit.getOverpayment());

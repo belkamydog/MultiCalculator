@@ -6,6 +6,9 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
+/**
+ * Содержит в себе данные за определенный временной промежуток (month/day/year)
+ * */
 @Getter
 @Setter
 public class TimeToken {

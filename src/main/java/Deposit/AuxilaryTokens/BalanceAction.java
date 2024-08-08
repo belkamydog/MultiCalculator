@@ -6,6 +6,9 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
+/**
+ * Содержит данные о пополнении снятии на {@link #date указанную дату}
+ * */
 @AllArgsConstructor
 @Getter
 @Setter

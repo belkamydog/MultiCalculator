@@ -1,6 +1,7 @@
 package Chart;
 
-import MainApp.CalcApp;
+import Engineer.EngineerCalculator;
+import Engineer.PolskayaCalculator.PolskayaCalculator;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,9 +27,9 @@ public class Chart {
 
     public void calculateChart(){
         for (double i = xMinInterval; i < xMaxInterval; i+= 0.5){
-            CalcApp calcApp = new CalcApp(infixExpression, "rad", i);
+            EngineerCalculator engineerCalculator = new EngineerCalculator(infixExpression, PolskayaCalculator.degreeOrRadian.deg, i);
             xAxis.add(i);
-            yAxis.add(calcApp.getResult());
+            yAxis.add(engineerCalculator.getResult());
         }
     }
 }

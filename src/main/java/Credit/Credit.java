@@ -14,27 +14,50 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author Efimov Artyom or Perryell
+ * @version 1.0
+ * Предназначен для рассчета кредита.
+ * Создайте обьект класса и вызовите метод {@link #calculate()}
+ * Используйте Getters для получения результатов расчета.
+ * Получение результатов возможно в double & BigDecimal.
+ * */
+
 @Getter
 @Setter
 public class Credit {
-
+    /**
+     * Типы платежей по кредиту
+     * {@link #annuity}
+     * {@link #differently}
+     * */
     public enum creditPaymentType {
         annuity,
         differently
     }
 
+    /**
+     * Возможный токен для срока кредита
+     * {@link #month}
+     * {@link #year}
+     * */
     public enum creditTermType {
         month,
         year
     }
 
+    /**
+     * Input data fields
+     **/
     private creditPaymentType paymentType;
     private BigDecimal loanAmount;
     private double interestRate;
     private Integer loanTerm;
     private creditTermType loanTermType;
     private LocalDate loanDate;
-
+    /**
+     * Calculate fields
+     **/
     private BigDecimal monthPayment;
     private BigDecimal minMonthPayment;
     private BigDecimal maxMonthPayment;
@@ -42,6 +65,14 @@ public class Credit {
     private BigDecimal fullCost;
     List<MonthPayment> monthPayments;
 
+    /**
+     * @param paymentType - тип платежа по кредиту см {@link creditPaymentType}
+     * @param loanAmount - сумма кредита
+     * @param interestRate  - процентная ставка по кредиту
+     * @param loanTerm - срок кредита
+     * @param loanTermType  - тип срока см {@link creditTermType}
+     * @param loanDate - дата взятия кредита
+     * */
     public Credit(creditPaymentType paymentType, Double loanAmount,
                   Double interestRate, Integer loanTerm, creditTermType loanTermType, LocalDate loanDate) {
         this.paymentType = paymentType;
@@ -58,6 +89,9 @@ public class Credit {
         monthPayments = new ArrayList<>();
     }
 
+    /**
+     * Преобразует обьект в строковое представление по типу JSON
+     * */
     @Override
     public String toString() {
         return "{" +
@@ -162,6 +196,9 @@ public class Credit {
         fullCost = overpayment.add(loanAmount).setScale(2, RoundingMode.HALF_EVEN);
     }
 
+    /**
+     * Вложенный класс который содержит в себе данные о ежемесячеом платеже по кредиту.
+     * */
     @Getter
     @Setter
     @AllArgsConstructor
@@ -173,6 +210,9 @@ public class Credit {
         private double accruedInterest;
         private double outstandingBalance;
 
+        /**
+         * Преобразует обьект в строковое представление по типу JSON
+         * */
         @Override
         public String toString() {
             return "{" +
