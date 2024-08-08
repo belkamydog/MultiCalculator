@@ -12,7 +12,8 @@
 
 ## How to start
  - You can add it to your project as a maven-dependency.
-   ``` <repositories>
+   ``` 
+   <repositories>
           <repository>
               <id>MultiCalculator-mvn-repo</id>
               <url>https://raw.github.com/belkamydog/MultiCalculator/mvn-repo/</url>
@@ -24,11 +25,12 @@
     </repositories>
     <dependescies>
         <dependency>
-            <groupId>com.devcolibri</groupId>
-            <artifactId>com.devcolibri.newlib</artifactId>
+            <groupId>org.example</groupId>
+            <artifactId>Calculator</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-    </dependencies> ```
+    </dependencies>
+    ```
 ## Engineer Calculator
    - Includes four classes, you can work with them both separately and through the main class [_**EngineerCalculator**_](https://belkamydog.github.io/MultiCalculator/Engineer/EngineerCalculator).
    - You can use a separate class [**_Polskaya_**](https://belkamydog.github.io/MultiCalculator/Engineer/Polskaya/Polskaya.html) to translate an expression into reverse Polish notation.
