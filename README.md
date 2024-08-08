@@ -1,6 +1,6 @@
 # MultiCalculator
 - This library is designed for educational purposes.
-- It includes four main functional areas: engineering polskayaCalculator, loan polskayaCalculator, deposit polskayaCalculator and chart polskayaCalculator.
+- It includes four main functional areas: engineering calculator, loan calculator, deposit calculator and chart calculator.
 
  - ### [How to start](#How-to-start)
  - ### [Engineer](#Engineer-Calculator)
