@@ -48,6 +48,7 @@ public class EngineerCalculator {
             polskayaCalculator.calculateExpression();
             result = polskayaCalculator.getResult();
             resultString = polskayaCalculator.getResultString();
+            valid = true;
         }
         else{
             valid = false;
