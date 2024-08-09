@@ -59,7 +59,7 @@ public class Chart {
         if (validation.isValid()) {
             valid = true;
             for (double i = xMinInterval; i < xMaxInterval; i += step) {
-                EngineerCalculator engineerCalculator = new EngineerCalculator(infixExpression, PolskayaCalculator.degreeOrRadian.deg, i);
+                EngineerCalculator engineerCalculator = new EngineerCalculator(infixExpression, PolskayaCalculator.degreeOrRadian.rad, i);
                 engineerCalculator.calculate();
                 xAxis.add(i);
                 yAxis.add(engineerCalculator.getResult());
