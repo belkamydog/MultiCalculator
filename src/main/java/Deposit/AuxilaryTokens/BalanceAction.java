@@ -16,4 +16,12 @@ public class BalanceAction {
     private LocalDate date;
     private long amount;
     private String type;
+
+    @Override
+    public String toString() {
+        return "BalanceAction{" +
+                "date: " + date + ", " +
+                "amount: " + amount + ", " +
+                "type: " + type + "}";
+    }
 }

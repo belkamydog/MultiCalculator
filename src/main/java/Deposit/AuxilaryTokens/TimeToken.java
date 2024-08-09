@@ -23,4 +23,13 @@ public class TimeToken {
         this.interests = interests;
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "date: " + date + ", " +
+                "interests: " + interests + ", " +
+                "balance: " + balance + ", " +
+                "status: " + status + "}";
+    }
 }

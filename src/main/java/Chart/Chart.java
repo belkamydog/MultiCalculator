@@ -68,4 +68,17 @@ public class Chart {
             valid = false;
         }
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "infixExpression: " + infixExpression + ", " +
+                "xMinInterval: " + xMinInterval + ", " +
+                "xMaxInterval: " + xMaxInterval + ", " +
+                "step: " + step + ", " +
+                "valid: " + valid + ", " +
+                "xAxis: " + xAxis + ", " +
+                "yAxis: " + yAxis +
+                "}";
+    }
 }

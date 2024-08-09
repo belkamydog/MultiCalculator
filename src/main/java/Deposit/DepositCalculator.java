@@ -147,6 +147,26 @@ public class DepositCalculator {
         }
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "startAmount:" + startAmount + ", " +
+                "placementPeriod:" + placementPeriod + ", " +
+                "periodType:" + periodType + ", " +
+                "interestRate:" + interestRate + ", " +
+                "taxRate:" + taxRate + ", " +
+                "capitalisation:" + capitalisation + ", " +
+                "startDate:" + startDate + ", " +
+                "pushMoney:" + pushMoney + ", " +
+                "popMoney:" + popMoney + ", " +
+                "resultDepositAmount:" + resultDepositAmount + ", " +
+                "interestCharges:" + interestCharges + ", " +
+                "tax:" + tax + ", " +
+                "capitalGains:" + capitalGains + ", " +
+                "statistic:" + statistic + ", " +
+                "}";
+    }
+
     private void dayPayments() {
         LocalDate currentDate = startDate.plusDays(1);
         resultDepositAmount = BigDecimal.valueOf(startAmount);

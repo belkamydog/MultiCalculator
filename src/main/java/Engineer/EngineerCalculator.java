@@ -35,6 +35,18 @@ public class EngineerCalculator {
         this.mode = mode;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "infixExpression: " + this.infixExpression + ", " +
+                "mode: " + this.mode + ", " +
+                "result: " + this.result + ", " +
+                "resultString: " + this.resultString + ", " +
+                "xVal: " + this.xVal + ", " +
+                "valid: " + this.valid +
+                "}";
+    }
+
     /**
      * Главная функция для рассчета
      * */
@@ -55,6 +67,5 @@ public class EngineerCalculator {
             resultString = infixExpression;
             result = Double.NEGATIVE_INFINITY;
         }
-
     }
 }
