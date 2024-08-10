@@ -1,6 +1,7 @@
 package Chart;
 
 import Engineer.EngineerCalculator;
+import Engineer.Polskaya.Polskaya;
 import Engineer.PolskayaCalculator.PolskayaCalculator;
 import Engineer.ValidationAndPreparing.ValidationAndPreparing;
 import lombok.Getter;
@@ -58,11 +59,14 @@ public class Chart {
         ValidationAndPreparing validation = new ValidationAndPreparing(infixExpression);
         if (validation.isValid()) {
             valid = true;
+            Polskaya polskaya = new Polskaya(infixExpression);
+            polskaya.calculatePolska();
+            PolskayaCalculator polskayaCalculator = new PolskayaCalculator(polskaya.getResultString(), PolskayaCalculator.degreeOrRadian.rad, 0);
             for (double i = xMinInterval; i < xMaxInterval; i += step) {
-                EngineerCalculator engineerCalculator = new EngineerCalculator(infixExpression, PolskayaCalculator.degreeOrRadian.rad, i);
-                engineerCalculator.calculate();
+                polskayaCalculator.setXVal(i);
+                polskayaCalculator.calculateExpression();
                 xAxis.add(i);
-                yAxis.add(engineerCalculator.getResult());
+                yAxis.add(polskayaCalculator.getResult());
             }
         } else {
             valid = false;
